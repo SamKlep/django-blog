@@ -28,15 +28,23 @@ h2 {
 #sidebar { 
     float:right;
     width:100%;
-    padding:10px;
+    
     height:100%;
     text-align: center;
 }
 
 #funk {
-    background: radial-gradient( #8e8cf0, #3c8fd3);
     display: flex;
     border-radius: 10px;
+}
+
+.card {
+    justify-content: center;
+}
+
+#logo {
+    color: greenyellow;
+    text-shadow: #FC0 1px 0 10px;
 }
 
 p.date { 
