@@ -1,6 +1,8 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <head>
     <title>{% block title %}{% endblock %}</title>
@@ -8,13 +10,24 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="/blog/" class="navbar-brand">
+            <h1>Bloom</h1>
+        </a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
     <div id="content">
         {% block content %}
         {% endblock %}
     </div>
     <div id="sidebar">
-        <h2>Swampy Blog</h2>
-        <p>Feel the huidity...</p>
+        <a href="/blog">
+            <h2>Bloom</h2>
+        </a>
+        <p>A Blog of Growth</p>
     </div>
 </body>
 
